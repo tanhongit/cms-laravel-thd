@@ -1,4 +1,14 @@
 php artisan make:seeder UsersTableSeeder 
+https://laravel.com/docs/5.8/seeding#writing-seeders
 
 -------
+
+https://laravel.com/docs/5.8/migrations#introduction
+php artisan make:migration create_courses_table
+php artisan make:migration create_categories_table
+...
+
+php artisan migrate:fresh
+
+--------
 
