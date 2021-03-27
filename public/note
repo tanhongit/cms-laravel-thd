@@ -9,6 +9,13 @@ php artisan make:migration create_categories_table
 ...
 
 php artisan migrate:fresh
+composer dump-autoload
+php artisan db:seed
 
 --------
 
+https://labs.infyom.com/laravelgenerator/docs/5.8/installation
+php artisan infyom:publish
+
+https://labs.infyom.com/laravelgenerator/docs/5.8/publish-layout
+php artisan infyom:publish:layout
