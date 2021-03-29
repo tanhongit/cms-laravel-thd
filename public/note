@@ -44,3 +44,8 @@ php artisan infyom:scaffold Item --fromTable --tableName=items
 php artisan infyom:scaffold Payment --fromTable --tableName=payments
 php artisan infyom:scaffold User --fromTable --tableName=users
 php artisan infyom:scaffold View --fromTable --tableName=views
+
+---------
+
+php artisan make:migration create_roles_table
+php artisan infyom:scaffold Role --fromTable --tableName=roles

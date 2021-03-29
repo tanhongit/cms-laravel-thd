@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder
             'name' => "admin",
             'email' => "admin@gmail.com",
             'password' => bcrypt('Admin@123'),
+            'role_id' => 1,
         ]);
         for ($i = 0; $i < 10; $i++) {
             DB::table('users')->insert([
