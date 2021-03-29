@@ -1,3 +1,7 @@
+php artisan cache:clear
+php artisan config:clear
+-------
+
 php artisan make:seeder UsersTableSeeder 
 https://laravel.com/docs/5.8/seeding#writing-seeders
 
@@ -19,3 +23,8 @@ php artisan infyom:publish
 
 https://labs.infyom.com/laravelgenerator/docs/5.8/publish-layout
 php artisan infyom:publish:layout
+
+---------
+
+https://labs.infyom.com/laravelgenerator/docs/5.8/generator-options#generate-from-table
+php artisan infyom:scaffold Category --tableName=categories
