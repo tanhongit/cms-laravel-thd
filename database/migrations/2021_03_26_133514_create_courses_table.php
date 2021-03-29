@@ -30,6 +30,7 @@ class CreateCoursesTable extends Migration
             $table->integer('status')->default(0);
             $table->string('photo')->nullable();
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }

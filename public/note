@@ -13,6 +13,7 @@ php artisan make:migration create_categories_table
 ...
 
 php artisan migrate:fresh
+php artisan migrate
 composer dump-autoload
 php artisan db:seed
 
@@ -27,4 +28,14 @@ php artisan infyom:publish:layout
 ---------
 
 https://labs.infyom.com/laravelgenerator/docs/5.8/generator-options#generate-from-table
-php artisan infyom:scaffold Category --tableName=categories
+new: php artisan infyom:scaffold Category --tableName=categories
+
+from: 
+php artisan infyom:scaffold Category --fromTable --tableName=categories
+php artisan infyom:scaffold Comment --fromTable --tableName=comments
+php artisan infyom:scaffold Course --fromTable --tableName=courses
+php artisan infyom:scaffold CourseUser --fromTable --tableName=course_user
+php artisan infyom:scaffold Item --fromTable --tableName=items
+php artisan infyom:scaffold Payment --fromTable --tableName=payments
+php artisan infyom:scaffold User --fromTable --tableName=users
+php artisan infyom:scaffold View --fromTable --tableName=views
