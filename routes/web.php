@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,30 +16,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Auth::routes(['verify' => true]);
-
-Route::get('/home', 'HomeController@index')->middleware('verified');
-
-Route::resource('categories', 'CategoryController');
-
-Route::resource('comments', 'CommentController');
-
-Route::resource('courses', 'CourseController');
-
-Route::resource('courseUsers', 'CourseUserController');
-
-Route::resource('items', 'ItemController');
-
-Route::resource('payments', 'PaymentController');
-
-Route::resource('users', 'UserController');
-
-Route::resource('views', 'ViewController');
-
-Route::resource('roles', 'RoleController');
